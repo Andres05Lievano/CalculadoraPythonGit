@@ -4,12 +4,17 @@ def calculadora():
     
     # Solicitar el segundo número al usuario
     num2 = float(input("Introduce el segundo número: ")) 
+
+    # Solicitar operacion al usuario
+    operacion = input("Desea sumar o restar(+ o -): ")
     
     # Realizar la operación correspondiente
-    resultado = num1 + num2
-
+    if operacion == "+":
+     resultado = num1 + num2
+    else: 
+     resultado = num1 - num2
     # Mostrar el resultado
-    print(f"El resultado de {num1} + {num2} es: {resultado}")
+    print(f"El resultado de {num1} {operacion}  {num2} es: {resultado}")
 
 # Llamar a la función calculadora
 calculadora()
